@@ -23,12 +23,10 @@ public class Chance
 	
 	public void trageEin(int[] pAugenzahl)
 	{
-		int summe = 0;
 		for (int i = 0; i < pAugenzahl.length; i++)
 		{
-			summe += pAugenzahl[i];
+			punktzahl += pAugenzahl[i];
 		}
-		punktzahl = summe;
 		istEingetragen = true;
 	}
 }
