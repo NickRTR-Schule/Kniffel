@@ -1,6 +1,6 @@
 package fachkonzept;
 
-public class Chance
+public class Chance extends Figur
 {
 	public void trageEin(int[] pAugenzahl)
 	{

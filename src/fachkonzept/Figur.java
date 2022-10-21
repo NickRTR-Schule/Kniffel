@@ -2,8 +2,8 @@ package fachkonzept;
 
 public class Figur
 {
-	private boolean istEingetragen;
-	private int punktzahl;
+	protected boolean istEingetragen;
+	protected int punktzahl;
 		
 	public Figur()
 	{
