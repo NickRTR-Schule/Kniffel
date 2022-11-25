@@ -9,9 +9,6 @@ public class Konsole
 {
 	public static void main(String[] args)
 	{
-		Witzfigur dieWitzfigur = new Witzfigur();
-
-
-		Figur dieFigur = new Figur();
+		
 	}
 }
