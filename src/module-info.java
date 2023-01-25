@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author nick
- *
- */
-module Kniffel {
-}

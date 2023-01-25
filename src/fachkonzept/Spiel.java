@@ -1,7 +1,5 @@
 package fachkonzept;
 
-import fachkonzept.Figur;
-
 public class Spiel {
 	private Figur[] dieFiguren = new Figur[13];
 	
@@ -21,5 +19,45 @@ public class Spiel {
 			dieFiguren[11] = new Kniffel();
 			dieFiguren[12] = new Chance();
 		}
+	}
+	
+	public void trageEin(int pFigurNr, int[] pAugenzahl)
+	{
+		dieFiguren[pFigurNr].trageEin(pAugenzahl);
+		dieFiguren[pFigurNr].istEingetragen();
+	}
+	
+	public int ermittleBonus()
+	{
+		int summe = 0;
+		for (int i = 0; i < 5; i++)
+		{
+			summe += dieFiguren[i].liesPunktzahl();
+		}
+		
+		if (summe >= 63)
+		{
+			return 35;
+		}
+		else {
+			return 0;
+		}
+	}
+	
+	public void starteNeu()
+	{
+		
+	}
+	
+	public boolean istBeendet()
+	{
+		for (int i = 0; i < dieFiguren.length; i++)
+		{
+			if (!dieFiguren[i].istEingetragen)
+			{
+				return false;
+			}
+		}
+		return true;
 	}
 }
